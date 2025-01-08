@@ -12,7 +12,7 @@
 
 // TODO: calculateStatistics 함수를 작성하세요.
 function calculateStatistics(users) {
-  // console.log(users, "아오");
+  console.log(users, "아오");
 
   if (!users[0]) {
     let averageAge = 0;

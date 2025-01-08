@@ -11,10 +11,7 @@
 
 // TODO: squareElements 함수를 작성하세요.
 function squareElements(arr) {
-  let arr2 = arr.map((e) => {
-    return e * e;
-  });
-  return arr2;
+  return arr.map((e) => e * e);
 }
 // squareElements([1, 2, 3]);
 
