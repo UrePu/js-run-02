@@ -10,7 +10,13 @@
  */
 
 // TODO: squareElements 함수를 작성하세요.
-function squareElements() {}
+function squareElements(arr) {
+  let arr2 = arr.map((e) => {
+    return e * e;
+  });
+  return arr2;
+}
+// squareElements([1, 2, 3]);
 
 // export를 수정하지 마세요.
 export { squareElements };
