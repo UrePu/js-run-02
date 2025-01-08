@@ -12,6 +12,23 @@
 
 // TODO: calculateStatistics 함수를 작성하세요.
 function calculateStatistics(users) {
+  // console.log(users, "아오");
+
+  if (!users[0]) {
+    let averageAge = 0;
+    let maxAge = 0;
+    return { averageAge, maxAge };
+  }
+  let sum = 0;
+  let maxAge = users[0].age;
+  users.forEach((e) => {
+    sum += e.age;
+    if (maxAge < e.age) maxAge = e.age;
+  });
+
+  let averageAge = sum / users.length;
+
+  return { averageAge, maxAge };
   // TODO
 }
 
